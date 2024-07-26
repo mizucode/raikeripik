@@ -12,44 +12,92 @@
       rel="stylesheet"
     />
     <!-- End Fonts -->
+
+    <title>Bakpia Sembilan</title>
   </head>
-  <body class="bg-blue-700">
+  <body class="bg-amber-600">
     <!-- Navbar Section Start -->
-    <nav class="py-4 bg-white drop-shadow-lg">
-      <div class="container">
-        <div class="items flex items-center justify-between px-4">
-          <div class="">Logo.png</div>
-          <div>Menu</div>
-        </div>
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-bold text-slate-500 cursor-pointer"
+          >Bakpia 9</span
+        >
+
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <span
+            name="menu"
+            onclick="Menu(this)"
+            class="icon-[charm--menu-hamburger]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"
+              />
+            </svg>
+          </span>
+        </span>
       </div>
+
+      <ul
+        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+            >LAYANAN</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+            >KONTAK KAMI</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+            >LOREM IPSUM</a
+          >
+        </li>
+
+        <button
+          class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded"
+        >
+          Pesan Sekarang
+        </button>
+        <h2 class=""></h2>
+      </ul>
     </nav>
     <!-- Navbar Section End -->
 
     <!-- Hero Section Start -->
-    <section
-      id="home"
-      class="bg-cover bg-center bg-no-repeat"
-      style="background-image: url(./img/download.jpg)"
-    >
-      <div class="container">
-        <div class="items py-16">
-          <div
-            class="text-hero flex flex-col items-center text-center gap-y-3 text-white"
-          >
-            <h1 class="text-4xl font-bold">BAKPIA SEMBILAN</h1>
-            <p class="px-4">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nobis
-              consequuntur id, architecto veniam atque!
-            </p>
-            <input
-              type="button"
-              value="Pesan Sekarang "
-              class="px-4 py-2 bg-orange-300 shadow-md rounded-md"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!-- Hero Section End -->
   </body>
+
+  <script>
+    function Menu(e) {
+      let list = document.querySelector("ul");
+      e.name === "menu"
+        ? ((e.name = "close"),
+          list.classList.add("top-[80px]"),
+          list.classList.add("opacity-100"))
+        : ((e.name = "menu"),
+          list.classList.remove("top-[80px]"),
+          list.classList.remove("opacity-100"));
+    }
+  </script>
+  <script src="./src/index.js"></script>
 </html>
