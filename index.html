@@ -51,29 +51,31 @@
         class="md:flex md:items-center z-[999] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-200"
       >
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+          <a href="#" class="text-xl hover:text-amber-600 duration-500">HOME</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+          <a href="#" class="text-xl hover:text-amber-600 duration-500"
             >LAYANAN</a
           >
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
+          <a href="#" class="text-xl hover:text-amber-600 duration-500"
+            >ABOUT</a
+          >
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+          <a href="#" class="text-xl hover:text-amber-600 duration-500"
             >KONTAK KAMI</a
           >
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+          <a href="#" class="text-xl hover:text-amber-600 duration-500"
             >LOREM IPSUM</a
           >
         </li>
 
         <button
-          class="bg-amber-700 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded"
+          class="bg-amber-700 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:text-amber-600 rounded"
         >
           Pesan Sekarang
         </button>
@@ -88,13 +90,16 @@
       style="background-image: url(/img/download.jpg)"
     >
       <div class="px-4 py-2">
-        <div class="flex flex-wrap justify-center gap-6">
-          <h1 class="font-bold text-white text-4xl">BAKPIA 99</h1>
-          <h2 class="text-center font-medium text-base font">
-            Nikmati kelezatan tradisional Indonesia dengan bakpia khas desa
-            citapen yang menggabungkan adonan lembut dengan isian manis yang
-            menggugah selera.
-          </h2>
+        <div class="flex flex-wrap justify-center gap-12">
+          <div class="flex flex-wrap justify-center gap-2">
+            <h1 class="font-bold text-white text-4xl">BAKPIA 99</h1>
+            <h2 class="text-center font-medium text-base font text-white">
+              Nikmati kelezatan tradisional Indonesia dengan bakpia khas desa
+              citapen yang menggabungkan adonan lembut dengan isian manis yang
+              menggugah selera.
+            </h2>
+          </div>
+
           <a
             href="#"
             class="px-4 py-2 rounded-md text-white bg-amber-700 shadow-md hover:bg-amber-900"
@@ -105,14 +110,47 @@
     </section>
 
     <!-- Hero Section End -->
+
+    <!-- Deskripsi Singkat Tentang Bakpia -->
+    <section class="bg-white w-full px-4 py-16">
+      <div class="container flex flex-wrap justify-center">
+        <div class="flex flex-wrap justify-center">
+          <div class="flex justify-center">
+            <img
+              src="/img/rotiicon-01.webp"
+              alt=""
+              class="aspect-video object-cover w-1/2"
+            />
+          </div>
+          <div class="flex justify-center flex-wrap mt-8">
+            <h1 class="font-bold text-htm text-4xl">Tentang Kami</h1>
+            <p class="text-center mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit eius, error dolor quibusdam sit soluta cum? Nemo
+              accusantium officia adipisci.
+            </p>
+            <a
+              href="#"
+              class="px-8 py-2 mt-8 bg-transparent text-amber-600 hover:text-white border-amber-600 border-2 hover:bg-amber-700"
+              >Tentang Kami</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Deskripsi Singkat Tentang Bakpia -->
   </body>
 
   <script>
     function Menu(e) {
       let list = document.querySelector("ul");
       e.name === "menu"
-        ? ((e.name = "close"), list.classList.add("opacity-100"))
-        : ((e.name = "menu"), list.classList.remove("opacity-100"));
+        ? ((e.name = "close"),
+          list.classList.add("top-[80px]"),
+          list.classList.add("opacity-100"))
+        : ((e.name = "menu"),
+          list.classList.remove("top-[80px]"),
+          list.classList.remove("opacity-100"));
     }
   </script>
   <script src="./src/index.js"></script>
