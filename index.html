@@ -17,7 +17,9 @@
   </head>
   <body class="bg-amber-600">
     <!-- Navbar Section Start -->
-    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <nav
+      class="p-5 bg-white sticky top-0 shadow md:flex md:items-center md:justify-between"
+    >
       <div class="flex justify-between items-center">
         <span class="text-2xl font-bold text-amber-700 cursor-pointer"
           >Bakpia 9</span
@@ -142,8 +144,8 @@
 
     <!-- Product -->
     <section class="container flex flex-wrap justify-center py-12">
-      <h2 class="text-3xl font-bold text-white text-center mb-8">
-        Varian Produk Kami
+      <h2 class="text-3xl font-bold text-white text-center pb-8">
+        VARIAN PRODUK KAMI
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Variant -->
@@ -189,6 +191,141 @@
     </section>
 
     <!-- End Product -->
+
+    <!-- Galery -->
+    <section class="bg-blue-400">
+      <div class="container px-4 py-8">
+        <div class="pb-4">
+          <h1 class="text-center text-white font-bold text-3xl">
+            GALERI KEGIATAN
+          </h1>
+        </div>
+        <div class="container mx-auto">
+          <div class="grid grid-cols-2">
+            <div class="aspect-square bg-red-500 overflow-hidden">
+              <img
+                src="img/SOSOKHITAM.jpg"
+                alt=""
+                srcset=""
+                class="object-cover bg-no-repeat hover:scale-150 transition duration-300"
+              />
+            </div>
+            <div class="aspect-square bg-green-500"></div>
+            <div class="aspect-square bg-blue-500"></div>
+            <div class="aspect-square bg-yellow-500"></div>
+            <div class="aspect-square bg-purple-500"></div>
+            <div class="aspect-square bg-pink-500"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Galery End -->
+
+    <!-- Staff Info -->
+    <section>
+      <div class="container px-4 py-8">
+        <div class="pb-4">
+          <h2 class="font-bold text-xl">Our Team</h2>
+          <h1 class="text-white font-bold text-3xl">STAFF INFORMASI</h1>
+        </div>
+        <div class="image">
+          <div class="image-items">
+            <div class="w-full h-full overflow-hidden">
+              <img
+                src="img/SOSOKHITAM.jpg"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <div class="bg-white w-full border-b-8 border-blue-700">
+              <div class="flex justify-between items-center px-8 py-4">
+                <div>
+                  <h1 class="font-bold text-xl">Asep Usamah</h1>
+                  <h2 class="font-medium opacity-50">Founder</h2>
+                </div>
+                <div class="opacity-50">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="4rem"
+                    height="4rem"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12.5 1.5c-1.77 0-3.33 1.17-3.83 2.87C8.14 4.13 7.58 4 7 4a4 4 0 0 0-4 4a4.01 4.01 0 0 0 3 3.87V19h13v-7.13c1.76-.46 3-2.05 3-3.87a4 4 0 0 0-4-4c-.58 0-1.14.13-1.67.37c-.5-1.7-2.06-2.87-3.83-2.87m-.5 9h1v7h-1zm-3 2h1v5H9zm6 0h1v5h-1zM6 20v1a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-1z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Staff Info end -->
+
+    <!-- Pemesanan -->
+    <section class="bg-gray-100 p-10">
+      <h2 class="text-2xl font-bold mb-4">Form Pemesanan</h2>
+      <form>
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
+            >Nama Lengkap</label
+          >
+          <input
+            type="text"
+            id="name"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Masukkan nama lengkap"
+          />
+        </div>
+        <div class="mb-4"></div>
+        <div class="mb-6">
+          <label
+            for="message"
+            class="block mb-2 text-sm font-bold text-gray-700"
+            >Pesan</label
+          >
+          <textarea
+            id="message"
+            rows="3"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Tuliskan pesan Anda"
+          ></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+          >
+            Kirim
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- End Pemesanan -->
+    <!-- Contact -->
+    <section class="bg-cyan-900 p-10">
+      <h2 class="text-2xl font-bold text-center mb-8">Kontak Kami</h2>
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-xl font-bold mb-2">Alamat</h3>
+          <p>Jalan Contoh Nomor 123</p>
+          <p>Kota Bekasi, Jawa Barat</p>
+        </div>
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-xl font-bold mb-2">Email</h3>
+          <p>contact@example.com</p>
+        </div>
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-xl font-bold mb-2">Telepon</h3>
+          <p>+62 812 3456 7890</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact End -->
   </body>
 
   <script>
