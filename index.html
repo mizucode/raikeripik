@@ -15,7 +15,7 @@
 
     <title>Bakpia Sembilan</title>
   </head>
-  <body class="bg-amber-600">
+  <body class="bg-white">
     <!-- Navbar Section Start -->
     <nav
       class="p-5 bg-white sticky top-0 shadow md:flex md:items-center md:justify-between"
@@ -53,31 +53,40 @@
         class="md:flex md:items-center z-[999] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-200"
       >
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-amber-600 duration-500">HOME</a>
+          <a href="#home" class="text-xl hover:text-cream duration-500">HOME</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-amber-600 duration-500"
-            >LAYANAN</a
+          <a href="#tentangkami" class="text-xl hover:text-cream duration-500"
+            >TENTANG KAMI</a
           >
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-amber-600 duration-500"
-            >ABOUT</a
+          <a href="#varianproduk" class="text-xl hover:text-cream duration-500"
+            >VARIAN PRODUK</a
           >
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-amber-600 duration-500"
-            >KONTAK KAMI</a
+          <a
+            href="#galerikegiatan"
+            class="text-xl hover:text-cream duration-500"
+            >GALERI KEGIATAN</a
           >
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-amber-600 duration-500"
-            >LOREM IPSUM</a
+          <a
+            href="#staffinformasi"
+            class="text-xl hover:text-cream duration-500"
+            >STAFF KAMI</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#pemesanan" class="text-xl hover:text-cream duration-500"
+            >PEMESANAN</a
           >
         </li>
 
         <button
-          class="bg-amber-700 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:text-amber-600 rounded"
+          class="bg-amber-700 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-amber-900 rounded"
         >
           Pesan Sekarang
         </button>
@@ -88,14 +97,15 @@
 
     <!-- Hero Section Start -->
     <section
+      id="home"
       class="w-full py-8 bg-blue-400 bg-no-repeat bg-cover"
-      style="background-image: url(img/download.jpg)"
+      style="background-image: url(img/bgpia-01.webp)"
     >
       <div class="px-4 py-2">
         <div class="flex flex-wrap justify-center gap-12">
           <div class="flex flex-wrap justify-center gap-2">
             <h1 class="font-bold text-white text-4xl">BAKPIA 99</h1>
-            <h2 class="text-center font-medium text-base font text-white">
+            <h2 class="text-center font-normal text-base font text-white">
               Nikmati kelezatan tradisional Indonesia dengan bakpia khas desa
               citapen yang menggabungkan adonan lembut dengan isian manis yang
               menggugah selera.
@@ -114,7 +124,7 @@
     <!-- Hero Section End -->
 
     <!-- Deskripsi Singkat Tentang Bakpia -->
-    <section class="bg-white w-full px-4 py-16">
+    <section class="bg-white w-full px-4 py-16" id="tentangkami">
       <div class="container flex flex-wrap justify-center">
         <div class="flex flex-wrap justify-center">
           <div class="flex justify-center">
@@ -127,9 +137,9 @@
           <div class="flex justify-center flex-wrap mt-8">
             <h1 class="font-bold text-htm text-4xl">Tentang Kami</h1>
             <p class="text-center mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit eius, error dolor quibusdam sit soluta cum? Nemo
-              accusantium officia adipisci.
+              Didirikan usaha dari Jakarta dan sudah berjalan lebih dari 5
+              tahun. Usaha yang diawali dari umkm sejak 2019 telah memproduksi
+              sekitar 500-700pcs perhari
             </p>
             <a
               href="#"
@@ -143,7 +153,10 @@
     <!-- End Deskripsi Singkat Tentang Bakpia -->
 
     <!-- Product -->
-    <section class="container flex flex-wrap justify-center py-12">
+    <section
+      class="container flex flex-wrap justify-center py-12 bg-amber-700"
+      id="varianproduk"
+    >
       <h2 class="text-3xl font-bold text-white text-center pb-8">
         VARIAN PRODUK KAMI
       </h2>
@@ -151,37 +164,73 @@
         <!-- Variant -->
         <div class="bg-white rounded-lg shadow-md p-6">
           <img
-            src="img/peduli apa.jpg"
+            src="img/kacangijo.jpg"
             alt="Produk 1"
             class="rounded-md mb-4 w-[300px] h-[300px] object-cover"
           />
           <div class="py-4">
             <div>
-              <h3 class="text-xl font-medium">Rasa Negro Hitam</h3>
-              <p class="text-gray-500">Terbuat dari bahan negro aseli.</p>
+              <h3 class="text-xl font-medium">Rasa Kacang Hijau</h3>
+              <p class="text-gray-500">Terbuat dari bahan kacang hijau asli</p>
             </div>
             <button
-              class="bg-blue-500 hover:bg-blue-700 mt-4 text-white font-bold py-2 px-4 rounded"
+              class="bg-amber-700 hover:bg-amber-900 mt-4 text-white font-bold py-2 px-4 rounded"
             >
-              Detail
+              Pesan Sekarang
             </button>
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-md p-6">
           <img
-            src="img/tatakramanya.jpg"
+            src="img/kelapa.jpg"
             alt="Produk 1"
             class="rounded-md mb-4 w-[300px] h-[300px] object-cover"
           />
           <div class="py-4">
             <div>
-              <h3 class="text-xl font-medium">Farhan Keseimbangan</h3>
-              <p class="text-gray-500">Pace tni su da dekat pace</p>
+              <h3 class="text-xl font-medium">Rasa Kelapa</h3>
+              <p class="text-gray-500">Diparut dari kelapa lokal</p>
             </div>
             <button
-              class="bg-blue-500 hover:bg-blue-700 mt-4 text-white font-bold py-2 px-4 rounded"
+              class="bg-amber-700 hover:bg-amber-900 mt-4 text-white font-bold py-2 px-4 rounded"
             >
-              Detail
+              Pesan Sekarang
+            </button>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <img
+            src="img/coklat.jpg"
+            alt="Produk 1"
+            class="rounded-md mb-4 w-[300px] h-[300px] object-cover"
+          />
+          <div class="py-4">
+            <div>
+              <h3 class="text-xl font-medium">Rasa Coklat</h3>
+              <p class="text-gray-500">Dari Coklat Aseli</p>
+            </div>
+            <button
+              class="bg-amber-700 hover:bg-amber-900 mt-4 text-white font-bold py-2 px-4 rounded"
+            >
+              Pesan Sekarang
+            </button>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <img
+            src="img/susu.jpg"
+            alt="Produk 1"
+            class="rounded-md mb-4 w-[300px] h-[300px] object-cover"
+          />
+          <div class="py-4">
+            <div>
+              <h3 class="text-xl font-medium">Rasa Susu</h3>
+              <p class="text-gray-500">Menggunakan susu murni</p>
+            </div>
+            <button
+              class="bg-amber-700 hover:bg-amber-900 mt-4 text-white font-bold py-2 px-4 rounded"
+            >
+              Pesan Sekarang
             </button>
           </div>
         </div>
@@ -193,7 +242,11 @@
     <!-- End Product -->
 
     <!-- Galery -->
-    <section class="bg-blue-400">
+    <section
+      class="bg-blue-400 bg-cover bg-no-repeat"
+      style="background-image: url(img/bgroti2-01.webp)"
+      id="galerikegiatan"
+    >
       <div class="container px-4 py-8">
         <div class="pb-4">
           <h1 class="text-center text-white font-bold text-3xl">
@@ -204,17 +257,52 @@
           <div class="grid grid-cols-2">
             <div class="aspect-square bg-red-500 overflow-hidden">
               <img
-                src="img/SOSOKHITAM.jpg"
+                src="img/virgi.jpg"
                 alt=""
                 srcset=""
                 class="object-cover bg-no-repeat hover:scale-150 transition duration-300"
               />
             </div>
-            <div class="aspect-square bg-green-500"></div>
-            <div class="aspect-square bg-blue-500"></div>
-            <div class="aspect-square bg-yellow-500"></div>
-            <div class="aspect-square bg-purple-500"></div>
-            <div class="aspect-square bg-pink-500"></div>
+            <div class="aspect-square bg-red-500 overflow-hidden">
+              <img
+                src="img/pemilik1.jpg"
+                alt=""
+                srcset=""
+                class="object-cover bg-no-repeat hover:scale-150 transition duration-300"
+              />
+            </div>
+            <div class="aspect-square bg-red-500 overflow-hidden">
+              <img
+                src="img/pemilik2.jpg"
+                alt=""
+                srcset=""
+                class="object-cover bg-no-repeat hover:scale-150 transition duration-300"
+              />
+            </div>
+            <div class="aspect-square bg-red-500 overflow-hidden">
+              <img
+                src="img/pemilik3.jpg"
+                alt=""
+                srcset=""
+                class="object-cover bg-no-repeat hover:scale-150 transition duration-300"
+              />
+            </div>
+            <div class="aspect-square bg-red-500 overflow-hidden">
+              <img
+                src="img/susu.jpg"
+                alt=""
+                srcset=""
+                class="object-cover bg-no-repeat hover:scale-150 transition duration-300"
+              />
+            </div>
+            <div class="aspect-square bg-red-500 overflow-hidden">
+              <img
+                src="img/kelapa.jpg"
+                alt=""
+                srcset=""
+                class="object-cover bg-no-repeat hover:scale-150 transition duration-300"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -222,7 +310,7 @@
     <!-- Galery End -->
 
     <!-- Staff Info -->
-    <section>
+    <section class="bg-amber-700" id="staffinformasi">
       <div class="container px-4 py-8">
         <div class="pb-4">
           <h2 class="font-bold text-xl">Our Team</h2>
@@ -232,15 +320,15 @@
           <div class="image-items">
             <div class="w-full h-full overflow-hidden">
               <img
-                src="img/SOSOKHITAM.jpg"
+                src="img/pemilik1.jpg"
                 alt=""
                 class="object-cover w-full h-full"
               />
             </div>
-            <div class="bg-white w-full border-b-8 border-blue-700">
+            <div class="bg-white w-full border-b-8 border-cream">
               <div class="flex justify-between items-center px-8 py-4">
                 <div>
-                  <h1 class="font-bold text-xl">Asep Usamah</h1>
+                  <h1 class="font-bold text-xl">Juanda Dan Ozan</h1>
                   <h2 class="font-medium opacity-50">Founder</h2>
                 </div>
                 <div class="opacity-50">
@@ -265,7 +353,7 @@
     <!-- Staff Info end -->
 
     <!-- Pemesanan -->
-    <section class="bg-gray-100 p-10">
+    <section class="bg-gray-100 p-10" id="pemesanan">
       <h2 class="text-2xl font-bold mb-4">Form Pemesanan</h2>
       <form>
         <div class="mb-4">
@@ -295,7 +383,7 @@
         </div>
         <div class="flex items-center justify-between">
           <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            class="bg-amber-700 hover:bg-amber-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Kirim
@@ -306,17 +394,17 @@
 
     <!-- End Pemesanan -->
     <!-- Contact -->
-    <section class="bg-cyan-900 p-10">
+    <section class="bg-amber-900 p-10 text-white">
       <h2 class="text-2xl font-bold text-center mb-8">Kontak Kami</h2>
       <div class="flex flex-col md:flex-row md:items-center md:justify-between">
         <div class="mb-6 md:mb-0">
           <h3 class="text-xl font-bold mb-2">Alamat</h3>
-          <p>Jalan Contoh Nomor 123</p>
-          <p>Kota Bekasi, Jawa Barat</p>
+          <p>Jalan Cidadali</p>
+          <p>Desa Citapen Kecamatan Japara</p>
         </div>
         <div class="mb-6 md:mb-0">
           <h3 class="text-xl font-bold mb-2">Email</h3>
-          <p>contact@example.com</p>
+          <p>bakpia99@gmail.com</p>
         </div>
         <div class="mb-6 md:mb-0">
           <h3 class="text-xl font-bold mb-2">Telepon</h3>
